@@ -1,7 +1,7 @@
 <div align="center">
     <h1 style="font-size: 60px">Ynüit</h1>
     <h2 style="font-size: 40px">Web-app</h1>
-    <img src="/src/assets/logo.png" alt="logo" style="max-height: 300px">
+    <img src="/src/assets/logo.png" alt="logo" width="300px">
 </div>
 
 ## Requirements
@@ -13,9 +13,23 @@
 
 ### Recover the project
 
-- https: ```git clone https://github.com/Ydays-Ynuit/front.git```
+Get the project from github using:
 
-- ssh: ```git clone git@github.com:Ydays-Ynuit/front.git```
+- https:
+
+```sh
+git clone https://github.com/Ydays-Ynuit/front.git
+```
+
+or
+
+- ssh:
+
+```sh
+git clone git@github.com:Ydays-Ynuit/front.git
+```
+
+Then, enter in the project folder
 
 ### Install dependencies
 
@@ -23,15 +37,15 @@
 yarn
 ```
 
-### Run the project
+### Use the project
 
-To run the project in developer mode
+Run it in developer mode:
 
 ```sh
 yarn run dev
 ```
 
-To build the project
+Build the project
 
 ```sh
 yarn run build
