@@ -1,6 +1,8 @@
 import './App.scss'
+import './fonts/Cagliostro.ttf'
 import HomePage from "./pages/HomePage.tsx";
-import { BrowserRouter, Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Logo from "./components/Logo.tsx";
 
 function App() {
 
@@ -9,6 +11,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/home" element={<HomePage />} />
+            <Route path="/logo" element={<Logo />} />
           </Routes>
         </BrowserRouter>
     </>

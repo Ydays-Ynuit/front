@@ -1,8 +1,7 @@
+import './Logo.scss'
 const Logo = () => {
     return (
-        <div>
-            <p>YN</p>
-        </div>
+        <p className="logo">YN</p>
     );
 };
 
