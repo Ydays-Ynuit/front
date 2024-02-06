@@ -1,7 +1,13 @@
+import useFetch from "../../hooks/useFetch.ts";
+
 const ChatMessage = () => {
+    const { data, loading, error } = useFetch("https://jsonplaceholder.typicode.com/todos/1");
+
+    if (error) console.log(error);
+
     return (
         <div>
-            Message bubble
+            {JSON.stringify(data)}
         </div>
     );
 };
