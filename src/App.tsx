@@ -1,6 +1,7 @@
 import './App.scss'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SettingsPage from "./pages/SettingsPage.tsx";
 import HomePage from "./pages/HomePage.tsx";
-import { BrowserRouter, Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/home" element={<HomePage />} />
+              <Route path="/settings" element={<SettingsPage />} />
           </Routes>
         </BrowserRouter>
     </>
