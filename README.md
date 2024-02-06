@@ -69,10 +69,6 @@ yarn run build
 
 <!-- TODO -->
 
-## Documentation
-
-<!-- TODO -->
-
 ## License
 
 Ynüit is open source software [or "is licensed"] under the MIT License. This means that anyone is free to use, copy, modify, and distribute the software for any purpose, subject to the terms outlined in the license.
