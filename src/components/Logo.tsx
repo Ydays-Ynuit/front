@@ -4,5 +4,4 @@ const Logo = () => {
         <p className="logo">YN</p>
     );
 };
-
 export default Logo;
