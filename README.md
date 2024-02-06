@@ -1,6 +1,6 @@
 <div align="center">
-    <p style="font-size: 60px"><span style="font-weight: bold">Ynüit</span> web-app</p>
-    <img src="/src/assets/logo.png" alt="logo" width="300px" />
+    <h1>Ynüit web-app</h1>
+    <img src="/src/assets/logo.png" alt="logo" width="280px" />
 </div>
 
 ## Description
@@ -9,6 +9,7 @@
 
 ## Requirements
 
+- [Git](https://www.git-scm.com/)
 - [Node](https://nodejs.org/en) : ```v20.11.0```
 - [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) : ```v1.22.21```
 
@@ -51,6 +52,8 @@ Run it in developer mode under development :
 ```sh
 yarn run dev
 ```
+
+You can now access it to [127.0.0.1:5173](http://127.0.0.1:5173/)
 
 ## Tests
 
