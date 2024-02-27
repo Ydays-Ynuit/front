@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Menuitems from "../components/Menuitems.tsx";
 
 const SettingsPage = () => {
     return (
@@ -6,10 +7,18 @@ const SettingsPage = () => {
             <div>
                 <h1>Settings</h1>
                 <ul>
-                    <li><Link to="/">Accueil</Link></li>
-                    <li><Link to="/profile">Profil</Link></li>
-                    <li><Link to="/settings">Paramètres</Link></li>
-                    <li><Link to="/support">Support</Link></li>
+                    <li><Link to="/Acceuil">`
+                        <Menuitems content={"Acceuil"} />
+                    </Link></li>
+                    <li><Link to="/profile">
+                        <Menuitems content={"Profile"} />
+                    </Link></li>
+                    <li><Link to="/paramètres">
+                        <Menuitems content={"Paramètres"} />
+                    </Link></li>
+                    <li><Link to="/support">
+                        <Menuitems content={"Support"} />
+                    </Link></li>
                 </ul>
             </div>
             )
