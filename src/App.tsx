@@ -7,14 +7,12 @@ import Logo from "./components/Logo.tsx";
 function App() {
 
   return (
-    <>
         <BrowserRouter>
           <Routes>
-            <Route path="/home" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/logo" element={<Logo />} />
           </Routes>
         </BrowserRouter>
-    </>
   )
 }
 

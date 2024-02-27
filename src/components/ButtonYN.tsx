@@ -1,9 +1,12 @@
 import './ButtonYN.scss';
 
-const ButtonYn = ({content}) => {
+export interface Props {
+    content: string;
+}
+const ButtonYn = ({content}: Props) => {
     return (
         <button className='button-yn'>
-            {content}
+            <p>{content}</p>
         </button>
     );
 };
