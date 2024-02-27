@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import './BarreRecherche.scss';
+import './SearchBar.scss';
 import {IoIosSearch} from "@react-icons/all-files/io/IoIosSearch";
 
 
-const BarreRecherche: React.FC = () => {
+const SearchBar: React.FC = () => {
     const [inputValue, setInputValue] = useState<string>('');
     
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setInputValue(event.target.value);
     };
+    
     const style = {color: "grey"};
     
     return (
@@ -27,4 +28,4 @@ const BarreRecherche: React.FC = () => {
         </div>
     );
 };
-export default BarreRecherche;
+export default SearchBar;
