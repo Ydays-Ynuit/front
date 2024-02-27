@@ -16,6 +16,7 @@ const HomePage = () => {
             <FaUserPlus />
             <BiMessageSquareEdit />
             <SearchBar />
+            <UserResultSearch />
         </div>
     );
 };
