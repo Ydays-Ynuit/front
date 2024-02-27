@@ -3,11 +3,10 @@ import Menuitems from "../components/Menuitems.tsx";
 
 const SettingsPage = () => {
     return (
-        <div>return (
             <div>
-                <h1>Settings</h1>
+                <h1>Speudo</h1>
                 <ul>
-                    <li><Link to="/Acceuil">`
+                    <li><Link to="/Acceuil">
                         <Menuitems content={"Acceuil"} />
                     </Link></li>
                     <li><Link to="/profile">
@@ -21,8 +20,6 @@ const SettingsPage = () => {
                     </Link></li>
                 </ul>
             </div>
-            )
-        </div>
     );
 };
 
