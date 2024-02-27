@@ -6,20 +6,18 @@ import {NavLink} from "react-router-dom";
 const LoginPage = () => {
     return (
         <>
-            <div className="fixed top-0 left-0 w-full">
+            <div className="-translate-y-8">
                 <Logo/>
-                <NavLink
-                    to="/"
-                    className="text-white "
-                >
-                    <div className="fixed -top-10 left-0 ml-16 relative text-2xl">
-                        <IoArrowBackCircleOutline/>
-                    </div>
-                </NavLink>
             </div>
+            <NavLink
+                to="/"
+                className="text-white text-2xl fixed top-3 left-2 "
+            >
+                <IoArrowBackCircleOutline/>
+            </NavLink>
 
-            <div className="container -translate-y-12">
-                <div className="-translate-y-12">
+            <div>
+                <div className="mt-32">
                     <h2 className="text-xl">Connexion</h2>
                 </div>
                 <div className="content">
