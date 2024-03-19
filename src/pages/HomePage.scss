@@ -1,4 +1,3 @@
-/* HTML: <div class="loader"></div> */
 .loader {
   width: 60px;
   height: 25px;
@@ -29,20 +28,6 @@
   }
 }
 
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-400px);
-    display: none;
-  }
-}
-
-.animate-fade-out {
-  animation: fade-out 2s ease-out forwards; /* Utilisation de forwards pour conserver la dernière valeur de l'animation */
-}
 
 @keyframes fade-in {
   from {
@@ -54,5 +39,5 @@
 }
 
 .animate-fade-in {
-  animation: fade-in 2s ease-in forwards; /* Utilisation de forwards pour conserver la dernière valeur de l'animation */
+  animation: fade-in .5s ease-in forwards; /* Utilisation de forwards pour conserver la dernière valeur de l'animation */
 }
