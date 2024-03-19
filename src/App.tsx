@@ -3,6 +3,7 @@ import './fonts/Cagliostro.ttf'
 import HomePage from "./pages/HomePage.tsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Logo from "./components/Logo.tsx";
+import AddFriendPage from './pages/AddFriendPage.tsx';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/logo" element={<Logo />} />
+            <Route path="/add" element={<AddFriendPage />} />
           </Routes>
         </BrowserRouter>
   )
