@@ -1,0 +1,58 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 60px;
+  height: 25px;
+  border: 2px solid;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: grid;
+  animation: l2 2s infinite linear;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  grid-area: 1/1;
+  border: inherit;
+  border-radius: 50%;
+  animation: inherit;
+  animation-duration: 3s;
+}
+
+.loader:after {
+  --s: -1;
+}
+
+@keyframes l2 {
+  100% {
+    transform: rotate(calc(var(--s, 1) * 1turn))
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-400px);
+    display: none;
+  }
+}
+
+.animate-fade-out {
+  animation: fade-out 2s ease-out forwards; /* Utilisation de forwards pour conserver la dernière valeur de l'animation */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-in forwards; /* Utilisation de forwards pour conserver la dernière valeur de l'animation */
+}
