@@ -1,22 +1,33 @@
-import Logo from "../components/Logo.tsx";
-import ButtonYn from "../components/ButtonYN.tsx";
-import BackToHomePage from "../components/BackToHomePage.tsx";
-import React from "react";
+import React from 'react';
+import Logo from "../../components/Logo.tsx";
+import {NavLink} from "react-router-dom";
+import {IoArrowBackCircleOutline} from "@react-icons/all-files/io5/IoArrowBackCircleOutline";
+import ButtonYn from "../../components/ButtonYN.tsx";
+import {FaPenAlt} from "@react-icons/all-files/fa/FaPenAlt";
 
-const LoginPage = () => {
+const ChangePseudoPage = () => {
     return (
         <>
-            <BackToHomePage/>
             <div className="-translate-y-8">
                 <Logo/>
             </div>
+            <NavLink
+                to="/"
+                className="text-white text-2xl fixed top-3 left-2 "
+            >
+                <IoArrowBackCircleOutline/>
+            </NavLink>
+
             <div>
                 <div className="mt-32">
-                    <h2 className="text-xl">Inscription</h2>
+                    <h1 className="flex justify-center mb-4">
+                        <FaPenAlt/>
+                    </h1>
+                    <h2 className="text-xl mb-12">Modifier mon pseudo</h2>
                 </div>
                 <div className="content">
                     <div className="text-left">
-                        <p className="my-2">Pseudo</p>
+                        <p className="my-2">Nouveau pseudo</p>
                         <input type="text" className="w-full bg-black bg-opacity-40 rounded-xl py-1 px-3"
                                placeholder="pseudo"/>
                     </div>
@@ -26,12 +37,12 @@ const LoginPage = () => {
                                placeholder="******"/>
                     </div>
                     <div className="text-left">
-                        <p className="my-2">Retaper le mot de passe</p>
+                        <p className="my-2">Token de sécurité</p>
                         <input type="password" className="w-full bg-black bg-opacity-40 rounded-xl py-1 px-3"
                                placeholder="******"/>
                     </div>
                     <div className="mt-16">
-                        <ButtonYn content="S'inscrire"/>
+                        <ButtonYn content="Valider"/>
                     </div>
                 </div>
             </div>
@@ -39,4 +50,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default ChangePseudoPage;
