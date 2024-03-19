@@ -1,22 +1,35 @@
 import Logo from "../components/Logo.tsx";
-import ChatMessage from "../components/Chat/ChatMessage.tsx";
+import './HomePage.scss';
 import ButtonYn from "../components/ButtonYN.tsx";
-import {IoSettingsOutline} from "@react-icons/all-files/io5/IoSettingsOutline";
-import {FaUserPlus} from "@react-icons/all-files/fa/FaUserPlus";
-import {BiMessageSquareEdit} from "@react-icons/all-files/bi/BiMessageSquareEdit";
-import SearchBar from "../components/Chat/SearchBar.tsx";
+import {NavLink} from "react-router-dom";
 
 const HomePage = () => {
     return (
         <div>
-            <Logo />
-            <ChatMessage />
-            <ButtonYn content={"Valider"} />
-            <IoSettingsOutline />
-            <FaUserPlus />
-            <BiMessageSquareEdit />
-            <SearchBar />
-            <UserResultSearch />
+            <div className="opacity-0 animate-fade-in">
+                <Logo/>
+            </div>
+            <div className="h-screen flex items-center justify-center opacity-0 animate-fade-out">
+                <div className="loader"></div>
+            </div>
+            <div className="opacity-0 animate-fade-in">
+                <div className="mt-16">
+                    <NavLink
+                        to="/login"
+                        className="text-white hover:text-white"
+                    >
+                        <ButtonYn content="Se connecter"/>
+                    </NavLink>
+                </div>
+                <div className="mt-16">
+                    <NavLink
+                        to="/registration"
+                        className="text-white hover:text-white"
+                    >
+                        <ButtonYn content="S'inscrire"/>
+                    </NavLink>
+                </div>
+            </div>
         </div>
     );
 };

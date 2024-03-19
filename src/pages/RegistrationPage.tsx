@@ -18,7 +18,7 @@ const LoginPage = () => {
 
             <div>
                 <div className="mt-32">
-                    <h2 className="text-xl">Connexion</h2>
+                    <h2 className="text-xl">Inscription</h2>
                 </div>
                 <div className="content">
                     <div className="text-left">
@@ -37,7 +37,7 @@ const LoginPage = () => {
                                placeholder="******"/>
                     </div>
                     <div className="mt-16">
-                        <ButtonYn content="Connexion"/>
+                        <ButtonYn content="S'inscrire"/>
                     </div>
                 </div>
             </div>
