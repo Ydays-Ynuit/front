@@ -1,0 +1,30 @@
+.searchResult-div{
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 15em;
+    height: 4em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.profile-picture{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50px;
+    margin-left: 0.5em;
+}
+
+.btnAddFriend{
+    border: none; 
+    background: none; 
+    outline: none !important; 
+    cursor: pointer; 
+    padding: 0;
+}
+
+.userName{
+    color: rgb(255, 255, 255, 0.6);
+}
+
